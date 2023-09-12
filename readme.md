@@ -4,3 +4,4 @@
 - Rappels JS
 - Plugins VSCode
 - JSDoc et Typescript
+- exercice jeu 01
