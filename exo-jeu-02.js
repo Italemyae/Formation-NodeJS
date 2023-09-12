@@ -25,11 +25,16 @@ const Random = {
 };
 
 function Jeu(options) {
+  const min = options?.min ?? !! 0; // new 2020 : default || 0
+  const max = options?.max ?? !! 0; // new 2020 : o?.key, si pas options (pas clef)
+
   this.rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
-  this.entierAlea = Random.getRandomIntInclusive(options.min, options.max);
+
+
+  this.entierAlea = Random.getRandomIntInclusive(min, max);
   this.essais = [];
 }
 
