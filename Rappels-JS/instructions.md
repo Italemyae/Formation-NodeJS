@@ -15,3 +15,8 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 ```
+## Install nvs
+
+Sous windows `choco install nvs` (natif)
+
+`winget` equivalent `apt-get` windows, project officiel windows
