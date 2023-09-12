@@ -63,3 +63,9 @@ Attention, le callback de question est toujours appelé avec un type String, à 
 3. Créer une fonction constructeur Jeu recevant un objet en paramètres d’entrée et définir 3 propriétés : rl, entierAlea et essais
 4. Créer une méthode loop/jouer() tel que le code suivant soit fonctionnel
 5. Prévoir des valeurs par défaut pour min et max
+
+## Proposals
+
+TC39 est le nom du groupe ECMA.
+
+Ils étudient et publient des [Proposals](https://github.com/tc39/proposals)
