@@ -13,13 +13,14 @@ function externe() {
 
   function interne() {
     const localScope = 'localScope';
+    // eslint-disable-next-line no-constant-condition
     if (true) {
       const blockScope = 'blockScope';
       console.log(blockScope);
       console.log(localScope);
       console.log(closureScope);
       console.log(fileScope);
-      console.log(globalScope);
+      console.log(globalThis.globalScope);
     }
   }
   interne();
