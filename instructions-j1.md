@@ -45,3 +45,21 @@ Executer `tsc monfichier.ts` produit monfichier.js
 5. Afficher une erreur si la saisie n'est pas un nombre (API Number sur MDN)
 
 Attention, le callback de question est toujours appelé avec un type String, à convertir si besoin
+
+## POO
+
+1. Une `function` est un objet, on peut `const o = new Foo('bar');`
+2. Ne pas crée une `function` par object, l'assigner sur un `o.prototype.bar = function(){}`
+
+## JSON
+
+1. `JSON.stringify()`
+1. `JSON.parse()`
+
+## [Jeu du plus et du moins 2](https://github.com/Italemyae/Formation-NodeJS/blob/master/exo-jeu-02.js)
+
+1. Reprendre le jeu du plus ou moins (correction)
+2. Créer un objet random avec la syntaxe Object Literal et y regrouper les fonctions aléatoires
+3. Créer une fonction constructeur Jeu recevant un objet en paramètres d’entrée et définir 3 propriétés : rl, entierAlea et essais
+4. Créer une méthode loop/jouer() tel que le code suivant soit fonctionnel
+5. Prévoir des valeurs par défaut pour min et max
