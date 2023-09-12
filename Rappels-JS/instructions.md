@@ -22,3 +22,4 @@ insert_final_newline = true
 Sous windows `choco install nvs` (natif)
 
 `winget` equivalent `apt-get` windows, project officiel windows
+
