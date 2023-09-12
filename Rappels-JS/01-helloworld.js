@@ -5,6 +5,6 @@ function hello(name) {
 }
 
 const names = ['Romain', 'Julien', 'Eric', 'Jean'];
-for(const n of names) {
-  console.log(hello(n))
+for (const n of names) {
+  console.log(hello(n));
 }

@@ -1,6 +1,8 @@
 ## Extension
 - editorconfig
 - vscode-icons
+- prettier
+- eslint
 
 Générer l'editorconfig (right-click) puis le modifier
 
