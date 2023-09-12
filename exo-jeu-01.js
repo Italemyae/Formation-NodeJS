@@ -27,6 +27,12 @@ function jouer() {
 
   rl.question('Quelle est la valeur mystère [1;100] ? ', (answer) => {
 
+    if (isNaN(answer)) {
+      console.log("not a number");
+      jouer(); // not a number
+      return;
+    };
+
     let i = parseInt(answer, 10);
     if (i == nombreAleatoire) {
       console.log(`---- Eukera ! ${i} == ${nombreAleatoire} ----`);
