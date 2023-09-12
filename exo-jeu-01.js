@@ -11,11 +11,10 @@
 // from https://nodejs.org/docs/latest-v16.x/api/readline.html
 
 // import d'un API (ici readline)
-const { log } = require('node:console');
-const readline = require('node:readline');
+import { createInterface } from 'node:readline';
 
 // configuration de l'abstraction
-const rl = readline.createInterface({
+const rl = createInterface({
   input: process.stdin,
   output: process.stdout,
 });
