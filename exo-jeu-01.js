@@ -29,9 +29,8 @@ function jouer() {
 
     if (isNaN(answer)) {
       console.log("not a number");
-      jouer(); // not a number
-      return;
-    };
+      return jouer();
+    }
 
     // let i = parseInt(answer, 10);
     // let i = Nummber.parseInt(answer, 10);
