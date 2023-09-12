@@ -33,7 +33,12 @@ function jouer() {
       return;
     };
 
-    let i = parseInt(answer, 10);
+    // let i = parseInt(answer, 10);
+    // let i = Nummber.parseInt(answer, 10);
+    // let i = Number(i);
+    let i = +answer; // +  : version courte pour cast str to int
+                     // !! : version courte pour cast int to bool
+
     if (i == nombreAleatoire) {
       console.log(`---- Eukera ! ${i} == ${nombreAleatoire} ----`);
       rl.close(); // interface
