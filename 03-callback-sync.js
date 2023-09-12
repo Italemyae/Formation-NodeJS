@@ -12,4 +12,5 @@ for (const n of names) {
 }
 
 // programmation fonctionnelle
-names.filter((n) => n.length === 4).forEach((n) => console.log(hello(n)));
+names.filter((n) => n.length === 4)
+     .forEach((n) => console.log(hello(n)));
