@@ -28,7 +28,7 @@ function Jeu(options) {
   const min = options?.min ?? !! 0; // new 2020 : default || 0
   const max = options?.max ?? !! 0; // new 2020 : o?.key, si pas options (pas clef)
 
-  this.rl = readline.createInterface({
+  this.rl = createInterface({
     input: process.stdin,
     output: process.stdout,
   });
@@ -63,7 +63,7 @@ Jeu.prototype.jouer = function() {
 }
 
 // import d'un API (ici readline)
-const readline = require('node:readline');
+import { createInterface } from 'node:readline';
 
 const game = new Jeu({
   min: 0,
