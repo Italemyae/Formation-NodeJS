@@ -36,7 +36,7 @@ Installer `npm install -g typescript`
 
 Executer `tsc monfichier.ts` produit monfichier.js
 
-## Jeu du plus et du moins
+## [Jeu du plus et du moins](https://github.com/Italemyae/Formation-NodeJS/blob/master/exo-jeu-01.js)
 
 1. Générer un entier aléatoire entre 0 et 100 (API Math sur MDN)
 2. Demander et récupérer la saisie (API Readline sur Node.js) puis afficher si le nombre est plus grand, plus petit ou trouvé
