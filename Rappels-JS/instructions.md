@@ -23,3 +23,16 @@ Sous windows `choco install nvs` (natif)
 
 `winget` equivalent `apt-get` windows, project officiel windows
 
+## Comment
+
+* JSDoc `/**` doc pré-remplie, permet de donner des infos à JS
+* TypeScript :
+  * renommer fichier en `.ts`
+  * ajouter typage `name: string`
+
+## Typescript
+
+Installer `npm install -g typescript`
+
+Executer `tsc monfichier.ts` produit monfichier.js
+
