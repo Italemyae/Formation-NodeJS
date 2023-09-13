@@ -45,3 +45,14 @@ names.filter((n) => n.length === 4)
     * `chalk` est ESM (pas commonjs)
 * Forcer usage même version `node -V` et `npm -V` dans un projet
 * `yarn` est une alternative à `npm` mais tape dans le même registry
+
+## Packages
+* [package.json](https://github.com/Italemyae/Formation-NodeJS/blob/master/package.json) ficher principal d'un projet
+  * `npm outdated` permet de connaitre paquets pas à jour
+  * dependencies
+    * `^4.1.3` verrouille la majeur 4
+    * `~4.1.3` verrouille la majeur et la mineur 1
+    * on ne peut pas verrouiller les dépendances indirectes
+* [package-lock.json](https://github.com/Italemyae/Formation-NodeJS/blob/master/package-lock.json) permet la reinstalle du meme env, y compris des dépendances indirectes
+  * `npm update <module>`
+
