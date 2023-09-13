@@ -12,7 +12,8 @@
 - Modules
 - [Exercice jeu 03 modules via esm](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j2.md#jeu-du-plus-et-du-moins--utilisation-modules)
 - [Exercice jeu 04 modules via commonjs](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j2.md#jeu-du-plus-et-du-moins--utilisation-modules)
-- API Promise, Filesystem
+- API Promise
+- API Filesystem `node:fs`
 
 # Documentation
 * [Mozilla/Javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript)

@@ -1,6 +1,7 @@
 // importer getRandomIntInclusive et readline
 import { getRandomIntInclusive } from './random.js';
 import * as readline from 'node:readline';
+import chalk from 'chalk';
 
 // exporter Jeu (default permet d'éviter les accolades)
 export default class Jeu {
@@ -19,10 +20,10 @@ export default class Jeu {
     // - la question s'affiche de façon synchrone
     // - la réponse est attendue en asynchrone
     if (this.essais.length) {
-      console.log('Vous avez déjà joué : ' + this.essais.join(' - '));
+      console.log(chalk.grey('Vous avez déjà joué : ' + this.essais.join(' - ')));
     }
 
-    this.rl.question('Quel est le nombre ? ', (answer) => {
+    this.rl.question(chalk.bgGrey('Quel est le nombre ?') + ' ', (answer) => {
       const entierSaisi = Number.parseInt(answer, 10);
 
       if (Number.isNaN(entierSaisi)) {

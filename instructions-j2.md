@@ -22,7 +22,7 @@ names.filter((n) => n.length === 4)
 
 ## Modules
 
-* Nodes c'est principalement `CommonJS`, `ESM` et `ES2022`
+* Nodes c'est principalement `CommonJS` (ancien), `ESM` (récent) et `ES2022` (trés récent)
 * Attention CommonJS, ES pour les `require` ou `import {  } from <file>`
 * `require` ne peut pas bloquer dans le navigateur car synchrone (bloquant)
 * les bundler resolvent le problème (un seul appel)
@@ -37,3 +37,11 @@ names.filter((n) => n.length === 4)
 * [Exercice jeu 03 modules via esm](https://github.com/Italemyae/Formation-NodeJS/blob/master/Modules/ex-esm)
 * [Exercice jeu 04 modules via commonjs](https://github.com/Italemyae/Formation-NodeJS/blob/master/Modules/ex-commonjs)
 
+## Installer un lib
+
+* la lib doit etre publiée sur [npmjs.com](npmjs.com) (public)
+  * [chalk](https://www.npmjs.com/package/chalkà ) lib de couleur en CLI.
+    * `npm install chalk`
+    * `chalk` est ESM (pas commonjs)
+* Forcer usage même version `node -V` et `npm -V` dans un projet
+* `yarn` est une alternative à `npm` mais tape dans le même registry
