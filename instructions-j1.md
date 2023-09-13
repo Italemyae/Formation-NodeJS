@@ -1,4 +1,6 @@
-## Extension
+# Jour 1
+
+## Plugins VSCode
 - editorconfig
 - vscode-icons
 - prettier
