@@ -19,3 +19,7 @@ names.filter((n) => n.length === 4)
 
 * `setTimeout(, 0)` à un intérêt lors de l'affichage puis resize
 * `setTimeout` est async, même à 0, il s'execute après le code sync
+
+## Modules
+
+* Nodes c'est principalement `CommonJS`, `ESM` et `ES2022`
