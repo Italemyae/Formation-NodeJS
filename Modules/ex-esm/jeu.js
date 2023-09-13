@@ -2,8 +2,8 @@
 import { getRandomIntInclusive } from './random.js';
 import * as readline from 'node:readline';
 
-// exporter Jeu
-export class Jeu {
+// exporter Jeu (default permet d'éviter les accolades)
+export default class Jeu {
   constructor(options = {}) {
     const min = options.min ?? 0;
     const max = options.max ?? 100;
