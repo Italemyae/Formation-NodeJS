@@ -89,11 +89,13 @@ names.filter((n) => n.length === 4)
 * process
 * os
 * path
-* [fs](https://github.com/Italemyae/Formation-NodeJS/blob/master/API-Nodes/04-fs.js)
-
+* fs
     * Sync
       * Avantage : simpke à lire
       * Inconveninent : thread bloqué pendant l'opération
     * Async
       * Inconvenient : difficile à lore
       * Avantage : thread non bloqué, à choisir sur serveur
+  * Attention au callback-hell
+  * Les promises sont bien les `.then` cachent les callback
+  * Les `async` / `await` simplifient le code

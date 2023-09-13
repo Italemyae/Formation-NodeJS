@@ -13,7 +13,7 @@ fs.readFile('03-path.js')
   });
 */
 
-
+// en version condensée, on peut virer les {} car 1 seule instruction
 fs.readFile('03-path.js')
   .then((buffer) => fs.writeFile('03-path.bak', buffer))
   .then(() => console.log('Copy Async Done'))
