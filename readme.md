@@ -9,6 +9,7 @@
 - [Exercice jeu 02](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j1.md#jeu-du-plus-et-du-moins-2)
 
 ## [Jour 2](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j2.md)
+- API Promise, Filesystem
 
 
 # Documentation
