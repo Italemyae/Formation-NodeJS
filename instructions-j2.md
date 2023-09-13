@@ -6,7 +6,7 @@
 * en typescript `.tsc` mais il faut transcompiler tsc > js avant d'executer le js
 * mettre des noms explicit
 
-## [Programmation fonctionnelle](https://github.com/Italemyae/Formation-NodeJS/blob/master/03-callback-sync.js)
+## [Programmation fonctionnelle](https://github.com/Italemyae/Formation-NodeJS/blob/master/Rappels-JS/03-callback-sync.js)
 
 ```Javascript
 const names = ['Romain', 'Eric', 'Jean'];

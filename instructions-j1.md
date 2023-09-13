@@ -38,7 +38,7 @@ Installer `npm install -g typescript`
 
 Executer `tsc monfichier.ts` produit monfichier.js
 
-## [Jeu du plus et du moins](https://github.com/Italemyae/Formation-NodeJS/blob/master/exo-jeu-01.js)
+## [Jeu du plus et du moins](https://github.com/Italemyae/Formation-NodeJS/blob/master/Rappels-JS/exo-jeu-01.js)
 
 1. Générer un entier aléatoire entre 0 et 100 (API Math sur MDN)
 2. Demander et récupérer la saisie (API Readline sur Node.js) puis afficher si le nombre est plus grand, plus petit ou trouvé
@@ -58,7 +58,7 @@ Attention, le callback de question est toujours appelé avec un type String, à 
 1. `JSON.stringify()`
 1. `JSON.parse()`
 
-## [Jeu du plus et du moins 2](https://github.com/Italemyae/Formation-NodeJS/blob/master/exo-jeu-02.js)
+## [Jeu du plus et du moins 2](https://github.com/Italemyae/Formation-NodeJS/blob/master/Rappels-JS/exo-jeu-02.js)
 
 1. Reprendre le jeu du plus ou moins (correction)
 2. Créer un objet random avec la syntaxe Object Literal et y regrouper les fonctions aléatoires
