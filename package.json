@@ -4,7 +4,8 @@
   "description": "- Rappels JS\r - Plugins VSCode\r - JSDoc et Typescript\r - [Exercice jeu 01](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j1.md#jeu-du-plus-et-du-moins)",
   "main": "01-helloworld.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
   },
   "author": "",
   "license": "ISC",

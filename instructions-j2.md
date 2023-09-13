@@ -57,4 +57,29 @@ names.filter((n) => n.length === 4)
     * `npm update <module>` met à jour jusqu'au `^` ou `~`
 * [package-lock.json](https://github.com/Italemyae/Formation-NodeJS/blob/master/package-lock.json) permet la reinstalle du meme env, y compris des dépendances indirectes
   * `npm install ` prend le ``package-lock.json` et s'y conforme
+  * `npm install xxx -D ` est un dev dependency et sera marqué comme tel dans le `package-log.json`
 
+  ## Installer et utiliser un soft
+  * install `npm i eslint`
+  * run `npx eslint` au lieu de `node_modules\.bin\eslint`
+  * quand on commence à utiliser des outils, la bonne pratique est de configurer le package.json
+
+  ```json
+  "scripts": {
+    "lint": "eslint commonjs" // arguments
+  }
+  ```
+
+  * on les execute avec, `npm run <nom du script>`
+
+  ## Cas [ESLint](https://eslint.org/docs/latest/rules/)
+  * `npx eslint --init`
+  * syntax only cause Prettier
+  * problems
+  * commonsjs
+  * framework : none
+  * typescript : No
+  * where : espace (choix multiple) ici Node
+  * format de la config : JSON mais Javascript sympa
+
+  Ce genre de questionnaire est généré par la lib `inquirer`
