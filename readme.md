@@ -11,3 +11,5 @@
 * [Mozilla/Javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 * [Nodejs.org](https://nodejs.org/docs/latest-v16.x/api/)
 * [ECMA proposals](https://github.com/tc39/proposals)
+
+## [Jour 2](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j2.md)
