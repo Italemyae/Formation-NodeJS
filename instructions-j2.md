@@ -6,7 +6,7 @@
 * en typescript `.tsc` mais il faut transcompiler tsc > js avant d'executer le js
 * mettre des noms explicit
 
-## [Programmation fonctionnelle}(https://github.com/Italemyae/Formation-NodeJS/blob/master/03-callback-sync.js)
+## [Programmation fonctionnelle](https://github.com/Italemyae/Formation-NodeJS/blob/master/03-callback-sync.js)
 
 ```Javascript
 const names = ['Romain', 'Eric', 'Jean'];
@@ -14,3 +14,8 @@ const names = ['Romain', 'Eric', 'Jean'];
 names.filter((n) => n.length === 4)
      .forEach((n) => console.log(hello(n)));
 ```
+
+## Callback
+
+* `setTimeout(, 0)` à un intérêt lors de l'affichage puis resize
+* `setTimeout` est async, même à 0, il s'execute après le code sync
