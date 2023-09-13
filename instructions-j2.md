@@ -83,3 +83,17 @@ names.filter((n) => n.length === 4)
   * format de la config : JSON mais Javascript sympa
 
   Ce genre de questionnaire est généré par la lib `inquirer`
+
+## [API-Node](https://github.com/Italemyae/Formation-NodeJS/blob/master/API-Nodes)
+
+* process
+* os
+* path
+* [fs](https://github.com/Italemyae/Formation-NodeJS/blob/master/API-Nodes/04-fs.js)
+
+    * Sync
+      * Avantage : simpke à lire
+      * Inconveninent : thread bloqué pendant l'opération
+    * Async
+      * Inconvenient : difficile à lore
+      * Avantage : thread non bloqué, à choisir sur serveur
