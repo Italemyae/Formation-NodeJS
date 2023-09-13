@@ -34,6 +34,6 @@ names.filter((n) => n.length === 4)
 * les `.js` seront utilisé selon `package.json`, il faut explicitement typer les autres `.cjs` ou `.mjs`
 
 ## Jeu du plus et du moins : utilisation modules
-* [esm](https://github.com/Italemyae/Formation-NodeJS/blob/master/Modules/ex-esm)
-* [esm](https://github.com/Italemyae/Formation-NodeJS/blob/master/Modules/ex-commonjs)
+* [Exercice jeu 03 modules via esm](https://github.com/Italemyae/Formation-NodeJS/blob/master/Modules/ex-esm)
+* [Exercice jeu 04 modules via commonjs](https://github.com/Italemyae/Formation-NodeJS/blob/master/Modules/ex-commonjs)
 
