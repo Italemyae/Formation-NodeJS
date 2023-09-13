@@ -9,11 +9,13 @@
 - [Exercice jeu 02](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j1.md#jeu-du-plus-et-du-moins-2)
 
 ## [Jour 2](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j2.md)
+- Modules
 - API Promise, Filesystem
 
 
 # Documentation
 * [Mozilla/Javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 * [Nodejs.org](https://nodejs.org/docs/latest-v16.x/api/)
-* [ECMA proposals](https://github.com/tc39/proposals)
+* [ECMAScript proposals](https://github.com/tc39/proposals)
+* [Repo du formateur](https://github.com/bioub/Formation_Node.js_2023_09)
 
