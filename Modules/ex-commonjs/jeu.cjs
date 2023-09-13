@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 // importer getRandomIntInclusive et readline
 const Random = require('./random.cjs');
 const readline = require('node:readline');

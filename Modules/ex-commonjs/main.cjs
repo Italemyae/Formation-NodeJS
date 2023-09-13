@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 // importer Jeu
 const Jeu = require('./jeu.cjs');
 
