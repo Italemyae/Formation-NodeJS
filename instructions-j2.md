@@ -23,3 +23,13 @@ names.filter((n) => n.length === 4)
 ## Modules
 
 * Nodes c'est principalement `CommonJS`, `ESM` et `ES2022`
+* Attention CommonJS, ES pour les `require` ou `import {  } from <file>`
+* `require` ne peut pas bloquer dans le navigateur car synchrone (bloquant)
+* les bundler resolvent le problème (un seul appel)
+  * `webpack` c'est un bundler connu
+  * `vite` (en rust) va remplacer `webpack` (en node)
+* ECMAScript Module (ESM)
+  * `export function () {}`
+* dans `package.json` on utilise le `type:` pour définir si `ES` (nouveau) ou `CommonJS` (ancien)
+* les `.js` seront utilisé selon `package.json`, il faut explicitement typer les autres `.cjs` ou `.mjs`
+
