@@ -44,7 +44,8 @@ names.filter((n) => n.length === 4)
     * `npm install chalk`
     * `chalk` est ESM (pas commonjs)
 * Forcer usage même version `node -V` et `npm -V` dans un projet
-* `yarn` est une alternative à `npm` mais tape dans le même registry
+* `yarn` (facebook) est une alternative à `npm` mais tape dans le même registry
+* `pnpm` fait une install globale et met des liens symboliques dans les projets
 
 ## Packages
 * [package.json](https://github.com/Italemyae/Formation-NodeJS/blob/master/package.json) ficher principal d'un projet
@@ -53,6 +54,7 @@ names.filter((n) => n.length === 4)
     * `^4.1.3` verrouille la majeur 4
     * `~4.1.3` verrouille la majeur et la mineur 1
     * on ne peut pas verrouiller les dépendances indirectes
+    * `npm update <module>` met à jour jusqu'au `^` ou `~`
 * [package-lock.json](https://github.com/Italemyae/Formation-NodeJS/blob/master/package-lock.json) permet la reinstalle du meme env, y compris des dépendances indirectes
-  * `npm update <module>`
+  * `npm install ` prend le ``package-lock.json` et s'y conforme
 

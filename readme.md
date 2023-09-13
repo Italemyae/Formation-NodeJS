@@ -21,3 +21,14 @@
 * [ECMAScript proposals](https://github.com/tc39/proposals)
 * [Repo du formateur](https://github.com/bioub/Formation_Node.js_2023_09)
 
+## Awesome - Listes de Libs & Conseils
+* [sindresorhus/awesome](https://github.com/sindresorhus/awesome)
+* [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
+
+## Trouver des libs
+ * [www.npmjs.com](https://www.npmjs.com/search?ranking=popularity&q=popularity)
+ * Github
+    * [by stars](https://github.com/search?q=stars:%3E0)
+    * [by trendings](https://github.com/trending)
+ * [Bestofjs](https://bestofjs.org/)
+ * [npm trends](https://www.npmtrends.com/) popularité d'une lib
