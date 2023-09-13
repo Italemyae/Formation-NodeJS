@@ -84,7 +84,7 @@ names.filter((n) => n.length === 4)
 
   Ce genre de questionnaire est généré par la lib `inquirer`
 
-## [API-Node](https://github.com/Italemyae/Formation-NodeJS/blob/master/API-Nodes)
+## [API-Node]https://github.com/Italemyae/Formation-NodeJS/tree/master/API-Node)
 
 * process
 * os
