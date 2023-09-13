@@ -1,5 +1,4 @@
 import fs from 'node:fs';
-import { CLIENT_RENEG_WINDOW } from 'node:tls';
 
 // Sync
 const buffer = fs.readFileSync('03-path.js');
