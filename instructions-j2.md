@@ -33,3 +33,7 @@ names.filter((n) => n.length === 4)
 * dans `package.json` on utilise le `type:` pour définir si `ES` (nouveau) ou `CommonJS` (ancien)
 * les `.js` seront utilisé selon `package.json`, il faut explicitement typer les autres `.cjs` ou `.mjs`
 
+## Jeu du plus et du moins : utilisation modules
+* [esm](https://github.com/Italemyae/Formation-NodeJS/blob/master/Modules/ex-esm)
+* [esm](https://github.com/Italemyae/Formation-NodeJS/blob/master/Modules/ex-commonjs)
+
