@@ -6,6 +6,7 @@
 - JSDoc et Typescript
 - [Exercice jeu 01](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j1.md#jeu-du-plus-et-du-moins)
 - Classes, Objects
+- - [Exercice jeu 02](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j1.md#jeu-du-plus-et-du-moins-2)
 
 ## Documentation
 * [Mozilla/Javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript)

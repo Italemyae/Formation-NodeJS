@@ -5,3 +5,5 @@
 * avec JDoc `/**`
 * en typescript `.tsc` mais il faut transcompiler tsc > js avant d'executer le js
 * mettre des noms explicit
+
+
