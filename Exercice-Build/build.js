@@ -32,8 +32,13 @@ async function build() {
   // et sans mélanger les syntaxes..
   const buffer = await fs.readFile(appJsDistPath);
   const minifiedCode = await minify(buffer.toString('utf8'));
-  await fs.writeFile(appJsDistPath.replace('.js', '.min.js'), minifiedCode.code);
+  await fs.writeFile(appJsDistPath, minifiedCode.code);
   console.log(chalk.bgBlue("5 - App.js minified"));
+
+  // const buffer = await fs.readFile(appJsDistPath);
+  const signature = await md5(buffer.toString('utf8'));
+  console.log(signature);
+  await fs.rename(appJsDistPath, appJsDistPath.replace('js', signature + '.js'))
 
 
 }
