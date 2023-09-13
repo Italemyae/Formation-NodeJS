@@ -1,0 +1,3 @@
+[submodule "Modules/ex-npm"]
+	path = Modules/ex-npm
+	url = https://github.com/bioub/Exercice-Build.git
