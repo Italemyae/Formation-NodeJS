@@ -21,9 +21,9 @@
 //   });
 // }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {setTimeout, setInterval} from 'node:timers/promises';
 import {createInterface} from 'node:readline/promises'; // node 18
-import { log } from 'node:console';
 
 await setTimeout(1000);
 console.log('setTimeout 1s');

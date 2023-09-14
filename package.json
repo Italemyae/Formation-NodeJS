@@ -5,7 +5,8 @@
   "main": "01-helloworld.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint"
+    "lint": "eslint",
+    "serve:15-2": "nodemon 15-express2.js"
   },
   "author": "",
   "license": "ISC",

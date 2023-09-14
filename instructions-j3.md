@@ -39,3 +39,9 @@ async function copyGitIgnore() {
 * QueryParam c'est le `?xxx`
 * Params c'est le `/xxx`
 * Postman est une appli electron, permet de tester
+* Express Middleware (plugins) importants
+  * `Body-parser`
+  * `cors` pour activer les requetes cross origin sinon on ne peut requeter que la même origine (url, port)
+  * `morgan`
+  * `multer` pour l'upload de fichiers
+  * `serve-statique` pour les fichiers statiques (images...)
