@@ -1,17 +1,27 @@
-const fs = require('fs/promises');
-const chalk = require('chalk');
-const path = require('path');
-const md5 = require('md5');
-const { minify } = require('terser');
+import fs from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { Buffer } from 'node:buffer';
+import url from 'node:url';
+import { createHash } from 'node:crypto';
+import { minify } from 'terser';
+import minimist from 'minimist';
+import chalk from 'chalk';
 
-const distPath = path.resolve(__dirname, 'dist');
-const srcPath = path.resolve(__dirname, 'src');
-const horlogeJsPath = path.resolve(srcPath, 'js', 'horloge.js');
-const indexJsPath = path.resolve(srcPath, 'js', 'index.js');
-const indexHtmlPath = path.resolve(srcPath, 'index.html');
-const indexHtmlDistPath = path.resolve(distPath, 'index.html');
-const appJsDistPath = path.resolve(distPath, 'app.js');
+// const args = minimist(process.argv.slice(2));
 
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+
+
+const distPath = resolve(__dirname, 'dist');
+const srcPath = resolve(__dirname, 'src');
+const horlogeJsPath = resolve(srcPath, 'js', 'horloge.js');
+const indexJsPath = resolve(srcPath, 'js', 'index.js');
+const indexHtmlPath = resolve(srcPath, 'index.html');
+const indexHtmlDistPath = resolve(distPath, 'index.html');
+let appJsDistPath = resolve(distPath, 'app.js');
+
+
+/* mon code - fonctionnel
 async function build() {
   console.log(chalk.bgBlue("1 - supprimer le dossier dist s'il exist"));
   await fs.rm('dist', { force: true, recursive: true }).catch((err) => console.error(err.message));
@@ -44,3 +54,50 @@ async function build() {
 }
 
 build();
+*/
+
+// correction
+async function rmAndMKdirDist() {
+  await fs.rm(distPath, { force: true, recursive: true});
+  await fs.mkdir(distPath);
+  console.log(chalk.bgGreen('dist created'));
+}
+
+async function buildJs() {
+  const buffers = await Promise.all([fs.readFile(horlogeJsPath), fs.readFile(indexJsPath)]);
+  let bufferOrStrToWrite = Buffer.concat(buffers);
+  let checksum;
+
+  if (true) {
+    const { code } = await minify(bufferOrStrToWrite.toString('utf8'));
+    bufferOrStrToWrite = code;
+  }
+
+  if (true) {
+    checksum = createHash('md5').update(bufferOrStrToWrite).digest('hex');
+    appJsDistPath = appJsDistPath.replace('app.js', `app.${checksum}.js`)
+  }
+
+  await fs.writeFile(appJsDistPath, bufferOrStrToWrite);
+  console.log(chalk.bgGreen('app.js created') + chalk.green(' + minified'));
+
+  return checksum;
+}
+
+async function buildHtml(checksum) {
+  let contentStr = await fs.readFile(indexHtmlPath, { encoding: 'utf-8' });
+
+  contentStr = contentStr.replace('<script src="./js/horloge.js"></script>', '')
+    .replace('js/index.js', checksum ? `app.${checksum}.js` : 'app.js');
+
+  await fs.writeFile(indexHtmlDistPath, contentStr);
+  console.log(chalk.bgGreen('index.html created'));
+}
+
+try {
+  await rmAndMKdirDist();
+  const checksum = await buildJs();
+  await buildHtml(checksum);
+} catch (err) {
+  console.log(chalk.red(err.message));
+}
