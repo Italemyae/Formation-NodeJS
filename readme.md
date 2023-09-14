@@ -16,7 +16,8 @@
 - API Filesystem `node:fs`
 
 ## [Jour 3](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j3.md)
--
+- API /Promise
+- API events
 
 # Documentation
 * [Mozilla/Javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
