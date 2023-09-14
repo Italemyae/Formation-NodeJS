@@ -1,2 +1,13 @@
 # Jour 3
 
+## Rappels
+* `Async` marche les les `modules/promises`
+``` javascript
+async function copyGitIgnore() {
+    const buffer = await fs.readFile('foo.file');
+    await fs.writeFile('bar.file', buffer);
+    console.log("Copy Sync Done");
+}
+```
+* Attention aux actions simultanées qui peuvent être executées dans des ordres différents
+* `Promise.all` est la [solution]()

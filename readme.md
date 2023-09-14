@@ -35,3 +35,6 @@
     * [by trendings](https://github.com/trending)
  * [Bestofjs](https://bestofjs.org/)
  * [npm trends](https://www.npmtrends.com/) popularité d'une lib
+
+## Autres
+ * [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/#summary) for all Gitlab, Github, SVN...
