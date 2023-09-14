@@ -27,4 +27,6 @@ async function copyGitIgnore() {
 * `http2` / `https` : à gerer avec des outils autres que node
     * serveur apache en frontal pour gerer, fait office de proxy
     * node lancé via pm2 en interne (exemple)
-* on utilisera [http](https://nodejs.org/api/http.html#class-httpserver) dans les exo
+* on utilisera [http](https://nodejs.org/api/http.html#class-httpserver) dans les exo mais il y a des framework web
+* [express](https://expressjs.com/) est très utilisé [restify, tastify et koa des concurrents](https://npmtrends.com/@nestjs/core-vs-express-vs-fastify-vs-koa)
+* [Nest](https://nestjs.com/) monte, à surveiller mais il est recommandé de déjà connaitre `express`
