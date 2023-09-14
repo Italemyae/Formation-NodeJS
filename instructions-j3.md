@@ -10,4 +10,4 @@ async function copyGitIgnore() {
 }
 ```
 * Attention aux actions simultanées qui peuvent être executées dans des ordres différents
-* `Promise.all` est la [solution]()
+* `Promise.all` est la solution. Voir aussi `Promise.allSettled`, `Promise.race` et `Promise.any` dans [09-api-promises.js](https://github.com/Italemyae/Formation-NodeJS/blob/master/API-Node/09-api-promises.js)
