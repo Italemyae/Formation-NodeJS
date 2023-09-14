@@ -56,3 +56,6 @@ async function copyGitIgnore() {
   * on peut choisir le moteur de templating via `--view <engine>`
   * `dot-env` est une lib populaire pour gérer les config.
     * utilisation voir [formateur/skeleton](https://github.com/bioub/express-rest-skeleton)
+  * un bon decoupage (mvc ?) et une lib comme `supertest` permet de tester `app.js` sans démarrer le serveur
+    * sortir le router et faire un `app.use('/api/todo', todoRoutes)`
+  * app.use permet d'enregistrer des routes et des middleware (morgan, cors, ...)
