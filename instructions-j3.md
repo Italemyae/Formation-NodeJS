@@ -11,3 +11,20 @@ async function copyGitIgnore() {
 ```
 * Attention aux actions simultanées qui peuvent être executées dans des ordres différents
 * `Promise.all` est la solution. Voir aussi `Promise.allSettled`, `Promise.race` et `Promise.any` dans [09-api-promises.js](https://github.com/Italemyae/Formation-NodeJS/blob/master/API-Node/09-api-promises.js)
+
+## Server
+
+* dans le package.json
+
+``` json
+"scripts": {
+  "start": "node 14-http.js",
+  "start:dev": "nodemon 14-http.js"
+}
+```
+
+* nodemon relance le serveur si les fichiers changent
+* `http2` / `https` : à gerer avec des outils autres que node
+    * serveur apache en frontal pour gerer, fait office de proxy
+    * node lancé via pm2 en interne (exemple)
+* on utilisera [http](https://nodejs.org/api/http.html#class-httpserver) dans les exo
