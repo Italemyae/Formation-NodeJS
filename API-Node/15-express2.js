@@ -15,3 +15,6 @@ app.post('/users/register', express.json(), (req, res) => {
 app.listen(3000, () => {
   console.log(`Serveur running at http://127.0.0.1:3000`);
 });
+
+
+// http://localhost:3000/users/register
