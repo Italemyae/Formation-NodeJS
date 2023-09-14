@@ -47,3 +47,12 @@ async function copyGitIgnore() {
   * `serve-statique` pour les fichiers statiques (images...)
 
 ## Exercice-Express
+* `npx express-generator` crée le skeleton mais ce n'est pas du REST
+  * mkdir du dossier
+  * run npx...
+  * install les dpendance `npm install`
+  * se lance via `npm run start` car lance `./bin/www` (contre intuitif)
+  * vient avec des views pour faire du templating (ici `jade` vient de Ruby)
+  * on peut choisir le moteur de templating via `--view <engine>`
+  * `dot-env` est une lib populaire pour gérer les config.
+    * utilisation voir [formateur/skeleton](https://github.com/bioub/express-rest-skeleton)

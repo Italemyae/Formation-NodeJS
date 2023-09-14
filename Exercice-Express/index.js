@@ -45,7 +45,7 @@ app.get('/api/todos/:todoId', (req, res) => {
   }
 });
 
-
+// express.json() == body-parser
 app.post('/api/todos', express.json(), (req, res) => {
   console.log(req.body);
   const i = nextId();
@@ -62,14 +62,94 @@ app.post('/api/todos', express.json(), (req, res) => {
 app.delete('/api/todos/:todoId', (req, res) => {
 
   console.table(todos);
+
+  const oldlengh = todos.length;
   todos = todos.filter(todo => todo.id !== Number(req.params.todoId));
 
   console.log('removed');
   console.table(todos);
 
-  res.statusCode = 200;
-  res.json(todos);
+  if (todos.length == oldlengh) {
+    res.statusCode = 404;
+    res.json({"msg": "Todo not found"});
+  } else {
+    res.statusCode = 200;
+    res.json(todos);
+  }
 })
+
+
+// express.json() == body-parser
+app.put('/api/todos/:todoId', express.json(), (req, res) => {
+
+  console.table(todos);
+  const i = +req.params.todoId; // + revient à convertir en number
+  const todo = todos.find((el) => el.id === i);
+
+  if (!todo) {
+    res.status = 404;
+    res.json({
+      msg: 'Todo not found',
+    });
+  }
+
+  // on degage tout sauf body
+  for (const key of Object.keys(todo)) {
+    if (key === 'id') {
+      continue;
+    }
+    delete todo[key];
+  }
+
+  // on retire body des trucs à ajouter (car il y est encore)
+  delete req.body.id; // on ne garde que l'id de l'URL
+
+  // on copy les k:v reçues
+  for (const [key, value] of Object.entries(req.body)) {
+    todo[key] = value;
+  }
+
+  console.table(todos);
+  res.json(todo);
+});
+
+
+// express.json() == body-parser
+app.patch('/api/todos/:todoId', express.json(), (req, res) => {
+
+  console.table(todos);
+  const i = +req.params.todoId; // + revient à convertir en number
+  const todo = todos.find((el) => el.id === i);
+
+  if (!todo) {
+    res.status = 404;
+    res.json({
+      msg: 'Todo not found',
+    });
+  }
+
+  // on degage tout sauf body
+  // for (const key of Object.keys(todo)) {
+  //   if (key === 'id') {
+  //     continue;
+  //   }
+  //   delete todo[key];
+  // }
+
+  // on retire body des trucs à ajouter (car il y est encore)
+  delete req.body.id;
+
+  // on copy les k:v reçues
+  for (const [key, value] of Object.entries(req.body)) {
+    todo[key] = value;
+  }
+
+  console.table(todos);
+  res.json(todo);
+});
+
+
+
 
 
 
