@@ -3,12 +3,12 @@ import express from 'express'
 const app = express();
 
 
-app.use('/api', () => {
+app.use('/api', (req, res)  => {
   res.send('/api');
 })
 
 // URL exacte /demo-all
-app.all('/demo-all', () => {
+app.all('/demo-all', (req, res)  => {
   res.send('Demo');
 })
 
