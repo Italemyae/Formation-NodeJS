@@ -102,3 +102,9 @@ primer-dataset.json`
 #### Notre framwork de tests : [Mocha](https://mochajs.org/#getting-started)
 
 * Mocha est prevu pour le TDD et un simili-BDD (style)
+* Où mettre ses tests ? 2 ecoles
+  * Test au même endroit que le test : le plus répandu
+  * séparés dans l'arborescence : src dans src, test dans test
+* install `npm install mocha -D`
+* souvent on utilise aussi [chai](https://www.chaijs.com/api/bdd/)
+    * install `npm install chai -D`
