@@ -98,6 +98,7 @@ primer-dataset.json`
 * Coté server : Jest
 * Coté client : Selenium
 * Bonne pratique : [Pattern AAA](https://methodpoet.com/aaa-in-unit-testing/)
+* cucumber.io existe en nodejs
 
 #### Notre framwork de tests : [Mocha](https://mochajs.org/#getting-started)
 
@@ -108,3 +109,6 @@ primer-dataset.json`
 * install `npm install mocha -D`
 * souvent on utilise aussi [chai](https://www.chaijs.com/api/bdd/)
     * install `npm install chai -D`
+* Sinon permet de gerer pas mal de choses
+  * install `npm install sinon -D`
+  * install `npm install sinon-chai -D`
