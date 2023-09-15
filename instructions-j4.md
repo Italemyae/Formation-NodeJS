@@ -84,3 +84,21 @@ primer-dataset.json`
     * souvent on utilise [Mongoose](https://mongoosejs.com/) car c'est plus haut niveau
   * [Mongoose](https://mongoosejs.com/docs/guide.html) > Mongo (drivers officiel)
   * Mongoose utilise Mongo donc c'est normal que son trend soit inférieur à Mongo
+
+#### [Mongoose API](https://mongoosejs.com/docs/guide.html)
+* [Populate](https://mongoosejs.com/docs/populate.html#population) permet de faire des jointures si on a fait un `Saving refs`
+  * Lookup de Mongo est moins légère
+
+## Tests Automatisés
+
+* Jest > [Mocha](https://mochajs.org/) > Jasmin
+  * Jest est le plus utilisé, tests en // dans un pool de workers node
+  * Mocha s'inspire de Jest, extrêmement flexible
+  * On utilisera Mocha
+* Coté server : Jest
+* Coté client : Selenium
+* Bonne pratique : [Pattern AAA](https://methodpoet.com/aaa-in-unit-testing/)
+
+#### Notre framwork de tests : [Mocha](https://mochajs.org/#getting-started)
+
+* Mocha est prevu pour le TDD et un simili-BDD (style)

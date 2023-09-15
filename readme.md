@@ -25,6 +25,7 @@
 * Rappel sur les BDD non relationnelles
 * MongoDB Compass
 * Mongo :arrow_right: [Mongoose](https://mongoosejs.com/docs/guide.html)
+* Tests automatisés
 
 # Documentation
 * [Mozilla/Javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
