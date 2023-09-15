@@ -93,4 +93,4 @@ const schema = new mongoose.Schema({
 
 const Todo = mongoose.model('Todo', schema, 'todos'); // c'est une classe
 
-module.exports = Todo;
+module.exports = Todo; // en direct car ses methodes par default correspondent à ce qu'on exportait (choix de conception judicieux)
