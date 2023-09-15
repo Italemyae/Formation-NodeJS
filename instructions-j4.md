@@ -31,8 +31,32 @@ for await (const answer of rl) {
 
 ## Dans un projet legacy
 * npm audit --fix
+* voir outil qui fait en auto
 
 
 ## Express-REST
 * regarder [JWT (Json Web Token)](https://jwt.io/) Bearer token très utilisé
 * regarder [dotenv](https://www.dotenv.org/docs/)
+
+## Echange back-front
+* Remote Procedure Call (RPC) : JSONRPC, XMLRPC
+  * [trpc](https://trpc.io/) API coté client / serveur
+* [GraphQL](https://graphql.org/) : client qui fait une sorte de reqête SQL
+  * Dev Facebook, environment React
+* REST : Express
+
+## Stack
+* MEAN : Mongo Express Angular Node
+* MERN : Mong Express React Node
+
+## NoSQL
+* Clé / valeur : Redis, Memcached
+* Orienté Colonne : HBase, Cassandra
+* Orienté Document-Object: __MongoDB__, CouchD
+* Orienté Graphe Neo4j
+
+#### MongoDB
+* Embarque un moteur Javascript
+  * SpiderMonkey, le moteur Mozilla
+  * V8, le moteur Node.js
+* MongoDB Shell, MongoDB Compass, Relation Migrator, Database-tools
