@@ -1,15 +1,15 @@
-const todos = [
-  {
-    id: 1,
-    title: 'Acheter du pain',
-    completed: false,
-  },
-  {
-    id: 2,
-    title: 'Introduire Express',
-    completed: true,
-  }
-];
+// const todos = [
+//   {
+//     id: 1,
+//     title: 'Acheter du pain',
+//     completed: false,
+//   },
+//   {
+//     id: 2,
+//     title: 'Introduire Express',
+//     completed: true,
+//   }
+// ];
 
 // function generateId() {
 //   const maxId = todos.reduce((acc, c) => c.id > acc ? c.id : acc, 0);
