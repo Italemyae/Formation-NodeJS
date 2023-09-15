@@ -78,4 +78,9 @@ primer-dataset.json`
   * `{ "grades.score": {$gt: 20}}`
   * `{ borough: "Queens", cuisine: "American"}` et logique
   * `{ $or: [{borough: "Queens"}, {cuisine: "American"}]}` ou
-
+*  [Drivers officiels](https://www.mongodb.com/docs/drivers/) pour les langages les plus courants
+    * exemple [FindOne Document](https://www.mongodb.com/docs/drivers/node/current/usage-examples/findOne/)
+  * Ouvrir / fermer une connexion est couteux : utiliser un lib pour gerer un pool de connexion et répartir les queries
+    * souvent on utilise [Mongoose](https://mongoosejs.com/) car c'est plus haut niveau
+  * Mongoose > Mongo (drivers officiel)
+  * Mongoose utilise Mongo donc c'est normal que son trend soit inférieur à Mongo
