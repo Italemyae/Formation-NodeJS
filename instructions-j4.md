@@ -28,3 +28,6 @@ for await (const answer of rl) {
 }
 ```
 * `readStream` permet de lire des gros volumes. Se pipe bien voir [12-Stream.js](https://github.com/Italemyae/Formation-NodeJS/blob/master/API-Node/12-stream.js#L17)
+
+## Dans un projet legacy
+* npm audit --fix
