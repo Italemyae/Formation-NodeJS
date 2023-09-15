@@ -15,6 +15,7 @@ chai.use(chaiHttp);
 
 describe('routes todo', () => {
   describe('GET /API/todos', () => {
+
     // async car fonction under test await (promise)
     it('should return status 200 with data from database', async () => {
       // Arrange
@@ -30,12 +31,32 @@ describe('routes todo', () => {
       sinon.verifyAndRestore();
     })
   })
+
+
+  // Exercice 2
+  // En vous inspirant du test ci dessous
+  // tester la route GET /api/tosods/1
+  // (status 200)
+  // (findById mocké appelé avec "1")
+  // (res/body deep equal le resolve du mock)
+
+  describe('GET /API/todos/1', () => {
+
+    it('should return status 200 with data from database', async () => {
+      // Arrange
+      const req = chai.request(app).get('/api/todos/1');
+      const mock = sinon.mock(Todo).expects('findById').resolves([{id: 1, title: 'ABC'}]);
+
+      // Act
+      const res = await req;
+
+      // Assert
+      chai.expect(res).to.have.status(200);
+      chai.expect(res.body).to.deep.equal([{id: 1, title: 'ABC'}]);
+      chai.expect(mock).to.have.been.calledOnceWith('1');
+      sinon.verifyAndRestore();
+    })
+  })
 })
 
 
-// Excercice 2
-// En vous inspirant du test ci dessous
-// tester la route GET /api/tosods/1
-// (status 200)
-// (findById mocké appelé avec "1")
-// (res/body deep equal le resolve du mock)
