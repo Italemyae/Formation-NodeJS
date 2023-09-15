@@ -62,3 +62,20 @@ for await (const answer of rl) {
 * MongoDB Shell, MongoDB Compass, [Relation Migrator](https://www.mongodb.com/try/download/relational-migrator), [Database-tools](https://www.mongodb.com/try/download/database-tools)
 
 ![SGBD](https://github.com/Italemyae/Formation-NodeJS/blob/master/SGBD.png)
+mongoimport --collection restaurants --file ~/downloads/primer-dataset.json
+
+* [jeu de données](https://raw.githubusercontent.com/OpenKitten/Mongo-Assets/master/primer-dataset.json) restaurants
+* import avec database tool : `mongoimport --collection restaurants --file ~/downloads/
+primer-dataset.json`
+* Avec Mongo.exe
+  * `db.restaurants.find({ borough: "Queens"}).count()`
+  * `db.restaurants.find({ borough: /^bro/i}).count()`
+  * `db.restaurants.find({ "address.zipcode": "10022"}).count()`
+* Avec Mongo Compass
+  * `{ borough: "Queens"}`
+  * `{ "grades.grade": "B"}`
+  * `{ "grades.score": 0}` 0 = rien à redire
+  * `{ "grades.score": {$gt: 20}}`
+  * `{ borough: "Queens", cuisine: "American"}` et logique
+  * `{ $or: [{borough: "Queens"}, {cuisine: "American"}]}` ou
+
