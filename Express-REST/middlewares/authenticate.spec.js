@@ -61,10 +61,9 @@ describe('authenticate middleware', () => {
       authenticate(req, res, next);
 
       // Assert
+
+      expect(res.json).to.have.calledOnceWithExactly({msg: 'Unauthorized',});
       expect(res.statusCode).to.equal(401);
-      expect(res.json).to.have.been.calledWithExactly({
-        msg: 'Unauthorized',
-      });
     });
-  });
-});
+  })
+})
