@@ -31,3 +31,8 @@ for await (const answer of rl) {
 
 ## Dans un projet legacy
 * npm audit --fix
+
+
+## Express-REST
+* regarder [JWT (Json Web Token)](https://jwt.io/) Bearer token très utilisé
+* regarder [dotenv](https://www.dotenv.org/docs/)
