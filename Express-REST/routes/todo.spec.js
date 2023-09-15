@@ -31,3 +31,11 @@ describe('routes todo', () => {
     })
   })
 })
+
+
+// Excercice 2
+// En vous inspirant du test ci dessous
+// tester la route GET /api/tosods/1
+// (status 200)
+// (findById mocké appelé avec "1")
+// (res/body deep equal le resolve du mock)

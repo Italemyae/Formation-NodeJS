@@ -6,7 +6,7 @@ const { tokens } = require('../models/user.cjs');
  * @param next {import('express').NextFunction}
  */
 function authenticate(req, res, next) {
-  if (tokens.includes(req.headers.authorization)) {
+  if (tokens.includes(req.headers.authorization.slice('Bearer '.length))) {
     return next();
   }
 

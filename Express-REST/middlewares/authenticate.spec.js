@@ -1,48 +1,43 @@
 const { describe, it, beforeEach, afterEach } = require('mocha');
-const { use, expect } = require('chai');
-const sinonChai = require('sinon-chai');
-const sinon = require('sinon');
+const sinon = require("sinon");
+const authenticate = require("./authenticate");
+const { tokens } = require("../models/user.cjs");
+const { use, expect } = require("chai");
+const sinonChai = require("sinon-chai");
 
-// OUT
-const authenticate = require('./authenticate.js');
-
-// dependances
-const { tokens } = require('../models/user.cjs');
-
-use(sinonChai);
+use(sinonChai)
 
 describe('authenticate middleware', () => {
-  describe('with valid token', () => {
 
+  describe('with valid token', () => {
     beforeEach(() => {
       tokens.push('ABC123');
     });
 
     afterEach(() => {
-      tokens.pop();
-    });
+      tokens.pop(); // remove 'ABC123'
+    })
 
-
-    it('should call next when token is valid', () => {
+    it('should call next', () => {
       // Arrange
-
       const req = {
         headers: {
           authorization: 'Bearer ABC123',
-        },
+        }
       };
-      const res = {
-        json: sinon.spy(),
-      };
+      const res = {};
       const next = sinon.spy();
 
       // Act
       authenticate(req, res, next);
 
       // Assert
-      expect(next).to.have.been.called();
+      expect(next).to.have.been.calledWithExactly();
     });
+  })
 
-    tokens.pop(); // remove 'ABC123'
-  });
-});
+  // Exercice 1
+  // Couvrir la 2e branche de authenticate
+  // où on ne passe pas dans le if
+  // (si le token est invalide la réponse doit etre 401 avec le message Unauthorized)
+})
