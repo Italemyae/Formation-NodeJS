@@ -24,7 +24,7 @@
 ## [Jour 4](https://github.com/Italemyae/Formation-NodeJS/blob/master/instructions-j4.md)
 * Rappel sur les BDD non relationnelles
 * MongoDB Compass
-* Mongo :arrow_right: Mongoose
+* Mongo :arrow_right: [Mongoose](https://mongoosejs.com/docs/guide.html)
 
 # Documentation
 * [Mozilla/Javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
