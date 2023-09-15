@@ -12,6 +12,7 @@
     "eslint": "^7.17.0",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.7",
+    "nyc": "^15.1.0",
     "sinon": "^16.0.0",
     "sinon-chai": "^3.7.0"
   },
@@ -21,6 +22,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "mocha --recursive  --ignore \"node_modules/**/*.spec.js\" \"**/*.spec.js\"",
-    "test:parallel": "mocha --recursive --ignore \"node_modules/**/*.spec.js\" --parallel \"**/*.spec.js\""
+    "coverage": "nyc npm run test"
   }
 }

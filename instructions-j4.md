@@ -113,3 +113,4 @@ primer-dataset.json`
   * install `npm install sinon -D`
   * install `npm install sinon-chai -D`
   * install `npm install chai-http -D`
+  * install `npm install nyc -D` lib qui calcule le coverage
