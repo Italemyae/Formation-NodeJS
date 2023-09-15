@@ -1,4 +1,4 @@
-const User = require('../models/user');
+const User = require('../models/user.cjs');
 
 /**
  * @param req {import('express').Request}

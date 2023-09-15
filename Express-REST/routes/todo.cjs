@@ -1,7 +1,7 @@
 const express = require('express');
 
-const authenticate = require('../middlewares/authenticate');
-const todoCtrl = require('../controllers/todo');
+const authenticate = require('../middlewares/authenticate.js');
+const todoCtrl = require('../controllers/todo.cjs');
 
 const router = express.Router();
 

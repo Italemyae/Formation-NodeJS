@@ -1,4 +1,4 @@
-const { tokens } = require('../models/user');
+const { tokens } = require('../models/user.cjs');
 
 /**
  * @param req {import('express').Request}

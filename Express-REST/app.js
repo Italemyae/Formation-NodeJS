@@ -2,8 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 
-const todoRoutes = require('./routes/todo');
-const userRoutes = require('./routes/user');
+const todoRoutes = require('./routes/todo.cjs');
+const userRoutes = require('./routes/user.cjs');
 
 const app = express();
 
