@@ -112,3 +112,4 @@ primer-dataset.json`
 * Sinon permet de gerer pas mal de choses
   * install `npm install sinon -D`
   * install `npm install sinon-chai -D`
+  * install `npm install chai-http -D`
