@@ -1,7 +1,12 @@
 const http = require('http');
+const mongoose  = require('mongoose');
 
 const config = require('./config/index.cjs');
 const app  = require('./app.js');
+
+mongoose.connect('mongodb://127.0.0.1:27017/test').then( () => {
+  console.log("MongoClient connection pool created");
+});
 
 const server = http.createServer(app);
 
